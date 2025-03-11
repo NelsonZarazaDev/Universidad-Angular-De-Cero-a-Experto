@@ -1,0 +1,15 @@
+<div class="conatainer mt-5 text-center">
+  <h2>Estado de Autenticacion</h2>
+  @if (isAutenticado) {
+  <p class="text-green-600">Estas autenticado</p>
+  } @else {
+  <p class="text-red-600">No estas autenticado</p>
+  }
+
+  <button
+    class="bg-blue-600 text-white mt-3 p-4 cursor-pointer"
+    (click)="alertnarAutenticacion()"
+  >
+    Autenticacion
+  </button>
+</div>

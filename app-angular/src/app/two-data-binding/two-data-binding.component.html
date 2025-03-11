@@ -1,0 +1,19 @@
+<div class="flex justify-center items-center">
+  <div class="w-50">
+    <div class="mb3">
+      <label for="inputTexto" class="mx-2"> Mensaje: </label>
+      <input
+        type="text"
+        name="inputTexto"
+        id="inputTexto"
+        [(ngModel)]="saludar"
+        autocomplete="off"
+      />
+    </div>
+    <div class="mb-3">
+        <div class="bg-green-400 mt-4 mx-auto w-50">
+          {{ saludar }}
+        </div>
+      </div>
+  </div>
+</div>
