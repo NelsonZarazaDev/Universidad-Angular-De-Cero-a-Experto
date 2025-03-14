@@ -1,0 +1,11 @@
+<h1 class="container text-center">Tienda Online</h1>
+<h3 class="container text-center">Listado de productos</h3>
+<ul class="w-50 mx-auto">
+    @for(producto of productos; track producto){
+        <li class="text-center">{{producto.descripcion}}, ${{producto.precio}}</li>
+    }
+<form class="">
+    <input class="bg-blue-100 p-2 m-1" type="text" name="descripcion" id="descripcion" placeholder="Descripcion" [(ngModel)]="descripcionInput">
+    <input class="bg-blue-100 p-2 m-1" type="number" name="precio" id="precio" placeholder="Precio" [(ngModel)]="precioInput">
+    <button type="submit" class="bg-blue-400 p-2 rounded-2xl cursor-pointer" (click)="agregarProducto()">Agregar producto</button>
+</form>

@@ -12,10 +12,16 @@ import { CalculadoraComponent } from "./calculadora/calculadora.component";
 import { ComponenteIfComponent } from "./componente-if/componente-if.component";
 import { LocalReferenceComponent } from "./local-reference/local-reference.component";
 import { ComponenteForComponent } from "./componente-for/componente-for.component";
+import { TiendaOnlineComponent } from "./tienda-online/tienda-online.component";
+import { PadreDecoradorComponent } from "./padre-decorador/padre-decorador.component";
+import { PadreOutputComponent } from "./padre-output/padre-output.component";
+import { PadreCalculadoraComponent } from "./padre-calculadora/padre-calculadora.component";
+import { ViewChildComponent } from "./view-child/view-child.component";
+import { ViewChildPadreComponent } from "./view-child-padre/view-child-padre.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NuevoComponenteComponent, InterpolacionComponent, PadreComponent, ListadoProductoComponent, HijoComponent, EventBindingComponent, ReplicadorComponent, TwoDataBindingComponent, CalculadoraComponent, ComponenteIfComponent, LocalReferenceComponent, ComponenteForComponent],
+  imports: [RouterOutlet, NuevoComponenteComponent, InterpolacionComponent, PadreComponent, ListadoProductoComponent, HijoComponent, EventBindingComponent, ReplicadorComponent, TwoDataBindingComponent, CalculadoraComponent, ComponenteIfComponent, LocalReferenceComponent, ComponenteForComponent, TiendaOnlineComponent, PadreDecoradorComponent, PadreOutputComponent, PadreCalculadoraComponent, ViewChildComponent, ViewChildPadreComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

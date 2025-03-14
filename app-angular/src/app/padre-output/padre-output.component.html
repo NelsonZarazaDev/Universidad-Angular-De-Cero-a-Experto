@@ -1,0 +1,6 @@
+<p>Componente Padre</p>
+<!-- event recibe la informacion del evento que esta notificando -->
+<app-hijo-output (notificarPadre)="recibirNotificacion($event)"></app-hijo-output>
+@if (mensaje) {
+    <p class="mt-3 bg-green-200 w-80 mx-auto">{{mensaje}}</p>
+}
